@@ -20,17 +20,11 @@ import androidx.navigation.compose.rememberNavController
 import br.edu.up.rgm33905380.R.string
 import br.edu.up.rgm33905380.ui.navigation.InventoryNavHost
 
-/**
- * Top level composable that represents screens for the application.
- */
 @Composable
 fun InventoryApp(navController: NavHostController = rememberNavController()) {
     InventoryNavHost(navController = navController)
 }
 
-/**
- * App bar to display title and conditionally display the back navigation.
- */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun InventoryTopAppBar(
